@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>{% block title %}Django{% endblock %}</title>
+
+    {% load static %}
+    <link href="{% static 'web/css/app.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
